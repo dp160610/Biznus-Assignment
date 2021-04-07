@@ -49,7 +49,7 @@ class App extends Component {
           <TopBar onClick={this.displayCart} />
         </div>
         <Switch>
-          <Route path="/" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/shop" component={Shop} />
           <Route path="/donate" component={Donate} />
