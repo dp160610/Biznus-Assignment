@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Biznus-Assignment/static/css/main.e8bf1a91.chunk.css",
-    "main.js": "/Biznus-Assignment/static/js/main.6ecdfa10.chunk.js",
-    "main.js.map": "/Biznus-Assignment/static/js/main.6ecdfa10.chunk.js.map",
+    "main.js": "/Biznus-Assignment/static/js/main.5c2df8b2.chunk.js",
+    "main.js.map": "/Biznus-Assignment/static/js/main.5c2df8b2.chunk.js.map",
     "runtime-main.js": "/Biznus-Assignment/static/js/runtime-main.98dd58fe.js",
     "runtime-main.js.map": "/Biznus-Assignment/static/js/runtime-main.98dd58fe.js.map",
     "static/js/2.d56b7326.chunk.js": "/Biznus-Assignment/static/js/2.d56b7326.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.98dd58fe.js",
     "static/js/2.d56b7326.chunk.js",
     "static/css/main.e8bf1a91.chunk.css",
-    "static/js/main.6ecdfa10.chunk.js"
+    "static/js/main.5c2df8b2.chunk.js"
   ]
 }
