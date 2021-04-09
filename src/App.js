@@ -7,11 +7,13 @@ import Shop from './Page-components/Shop/Shop'
 import Donate from './Page-components/Donate/Donate'
 import Contact from './Page-components/Contact/Contact'
 import Cart from './Page-components/components/Cart'
-import {useEffect} from 'react'
+import {useEffect} from 'react';
 import {addProduct} from './Action/action'
 import ProductDetail from './Page-components/Shop/ProductDetail';
 import { withRouter, useLocation } from "react-router-dom";
 import ReadOurStatement from './Page-components/Home/ReadOurStatement'
+import TopBar from './Page-components/components/TopBar'
+import Announcement from './Page-components/components/Announcement'
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
@@ -38,17 +40,18 @@ function App() {
     <div>
       <Cart  />
       <Router>
+        <Announcement/>
+        <TopBar/>
+        <Route exact path="/"><Home/></Route>
         <ScrollToTop>
           <Switch>
-            <Route exact path={`/`}  component={Home}/>
-            <Route path={`/about`}  component={About}/>
+            <Route exact path={`/about`}  component={About}/>
             <Route exact path={`/shop`}  component={Shop}/>
-            <Route  path={`/shop/product/:id`} component={ProductDetail}/>
+            <Route exact path={`/shop/product/:id`} component={ProductDetail}/>
             <Route exact path={`/donate`}  component={Donate}/>
-            <Route path={`/donate/:id`} component={ProductDetail}/>
-            <Route path={`/contact`}  component={Contact}/>
-            <Route path={`/alert/how-were-responding-to-covid-19`}  component={ReadOurStatement} />
-            <Route render = {()=><h1>400 ERROR</h1>} />
+            <Route exact path={`/donate/:id`} component={ProductDetail}/>
+            <Route exact path={`/contact`}  component={Contact}/>
+            <Route exact path={`/alert/how-were-responding-to-covid-19`}  component={ReadOurStatement} />
           </Switch>
         </ScrollToTop>
       </Router>
